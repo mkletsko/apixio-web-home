@@ -1,0 +1,102 @@
+/* technology section */
+.technology {
+  padding-bottom: 40px;
+  background-image: url("../images/background-technology.png");
+  background-size: 100% 100%;
+  color: #FFFFFF;
+}
+.technology .h3-title {
+  max-width: 650px;
+  margin: 80px auto 0;
+  color: inherit;
+}
+.technology .line-profiler {
+  max-width: 215px;
+  border: 1px solid #FFFFFF;
+}
+.technology .line-profiler .ellipse {
+  background-color: #48b20f;
+}
+.technology .progress {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+}
+.technology .pro-elem {
+  width: 270px;
+  height: 270px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: 9px solid #FFFFFF;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.technology .pro-elem:last-child {
+  margin-right: 0;
+}
+.technology .in-pro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 135px;
+          border-radius: 135px;
+}
+.technology .pro-number {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60pt;
+  line-height: 70pt;
+  color: inherit;
+}
+.technology .pro-million {
+  font-family: 'HelveticaNeue2', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18pt;
+  color: inherit;
+}
+.technology .pro-desc {
+  font-family: 'HelveticaNeueExtLt', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14pt;
+  color: inherit;
+  text-align: center;
+}
+.technology .video-button {
+  margin: 0 auto;
+  width: 210px;
+  background-color: #48b20f;
+}
+.technology .video-button:hover {
+  background-color: rgba(72, 178, 15, 0.9);
+}
+/* END technology section */

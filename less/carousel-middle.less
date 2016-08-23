@@ -1,0 +1,132 @@
+/* carousel-middle */
+.carousel-middle {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 415px;
+
+  .carousel-middle-content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 415px;
+  }
+
+  /* button-carousel style */
+  .button-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 100%;
+
+    img {
+      display: block;
+      width: 20px;
+      height: 30px;
+    }
+
+  }
+
+  .button-carousel:focus {
+    outline: none;
+  }
+
+  .button-carousel:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .backward {
+    left: 0;
+    padding: 0 20px;
+  }
+
+  .forward {
+    right: 0;
+    padding: 0 20px;
+  }
+  /* END button-carousel style */
+
+  .middle-slide-2 {
+    background-image: url("../images/carousel-background-2.png");
+    background-size: 100% 100%;
+    height: 100%;
+
+    div.line-profiler {
+      max-width: 215px;
+      border: 1px solid #FFFFFF;
+      .ellipse {
+        background-color: #48b20f;
+      }
+    }
+
+    .h3-title {
+      color: #FFFFFF;
+    }
+
+    q.quote {
+      color: #FFFFFF;
+    }
+
+  }
+
+  .content {
+    overflow: hidden;
+    padding: 0 80px;
+    margin-bottom: 65px;
+    box-sizing: content-box;
+
+  }
+
+  .h3-title {
+    margin-top: 60px;
+  }
+
+  .line-profiler {
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 55px;
+  }
+
+  .img-carousel_middle {
+    display: block;
+   float: left;
+   width: 45%;
+   max-width: 300px;
+  }
+
+  .carousel-quote {
+    float: right;
+    width: 50%;
+    max-width: 375px;
+  }
+
+  .quote {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 14pt;
+    color: #727272;
+  }
+
+  .author-quote {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #1463a7;
+    margin-bottom: 10px;
+  }
+
+  .position-quote {
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #000000;
+  }
+
+}/* END carousel-middle */

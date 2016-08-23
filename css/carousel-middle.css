@@ -1,0 +1,123 @@
+/* carousel-middle */
+.carousel-middle {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 415px;
+  /* button-carousel style */
+  /* END button-carousel style */
+}
+.carousel-middle .carousel-middle-content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  height: 415px;
+}
+.carousel-middle .button-carousel {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  height: 100%;
+}
+.carousel-middle .button-carousel img {
+  display: block;
+  width: 20px;
+  height: 30px;
+}
+.carousel-middle .button-carousel:focus {
+  outline: none;
+}
+.carousel-middle .button-carousel:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.carousel-middle .backward {
+  left: 0;
+  padding: 0 20px;
+}
+.carousel-middle .forward {
+  right: 0;
+  padding: 0 20px;
+}
+.carousel-middle .middle-slide-2 {
+  background-image: url("../images/carousel-background-2.png");
+  background-size: 100% 100%;
+  height: 100%;
+}
+.carousel-middle .middle-slide-2 div.line-profiler {
+  max-width: 215px;
+  border: 1px solid #FFFFFF;
+}
+.carousel-middle .middle-slide-2 div.line-profiler .ellipse {
+  background-color: #48b20f;
+}
+.carousel-middle .middle-slide-2 .h3-title {
+  color: #FFFFFF;
+}
+.carousel-middle .middle-slide-2 q.quote {
+  color: #FFFFFF;
+}
+.carousel-middle .content {
+  overflow: hidden;
+  padding: 0 80px;
+  margin-bottom: 65px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.carousel-middle .h3-title {
+  margin-top: 60px;
+}
+.carousel-middle .line-profiler {
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 55px;
+}
+.carousel-middle .img-carousel_middle {
+  display: block;
+  float: left;
+  width: 45%;
+  max-width: 300px;
+}
+.carousel-middle .carousel-quote {
+  float: right;
+  width: 50%;
+  max-width: 375px;
+}
+.carousel-middle .quote {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 14pt;
+  color: #727272;
+}
+.carousel-middle .author-quote {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #1463a7;
+  margin-bottom: 10px;
+}
+.carousel-middle .position-quote {
+  display: block;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #000000;
+}
+/* END carousel-middle */
