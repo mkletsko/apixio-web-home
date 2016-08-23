@@ -83,19 +83,6 @@ App = (function(){
         };
         /* END click next */
 
-        /* click prev *
-        var clickNavigationPrev = function (e) {
-            var target = event.target;
-
-            if (!target.classList.contains('nav-carousel')) {
-                return;
-            }
-
-            target.classList.add('active-nav-carousel');
-
-        };
-        /* END click prev */
-
         /* click next */
         var clickNavigationNext = function (event) {
             var target = event.target;
@@ -115,46 +102,17 @@ App = (function(){
         };
         /* END click next */
 
-        document.onclick = clickNavigationNext;
-        //document.onclick = clickNavigationPrev;
-
-
-        // for(; positionSlide < navCarousel.length; positionSlide++) {
-        //     /* click prev */
-        //     var clickNext = function (e) {
-        //
-        //         var e = e || window.event;
-        //
-        //         galleryLi[positionSlide].classList.remove('slide-showed');
-        //         navCarousel[positionSlide].classList.remove('active-nav-carousel');
-        //         positionSlide = positionSlide + 1;
-        //
-        //         if (positionSlide >= galleryLi.length) {
-        //             positionSlide = 0;
-        //         }
-        //         galleryLi[positionSlide].classList.add('slide-showed');
-        //         navCarousel[positionSlide].classList.add('active-nav-carousel');
-        //
-        //     };
-        //     /* END click prev */
-        // }
 
         /*  event add elements */
         if (buttonPrev.addEventListener || buttonNext.addEventListener || document.addEventListener){
             buttonPrev.addEventListener('click', clickPrev);
             buttonNext.addEventListener('click', clickNext);
-            //document.addEventListener('click', clickNavigationPrev);
-            //document.addEventListener('click', clickNavigationNext);
         } else if (buttonPrev.attachEvent || buttonNext.attachEvent || document.attachEvent){
             buttonPrev.attachEvent('onclick', clickPrev);
             buttonNext.attachEvent('onclick', clickNext);
-            //document.attachEvent('onclick', clickNavigationPrev);
-            //document.attachEvent('onclick', clickNavigationNext);
         } else {
             buttonPrev.onclick = clickPrev;
             buttonNext.onclick = clickNext;
-            //document.onclick = clickNavigationPrev;
-            //document.onclick = clickNavigationNext;
         };
         /*  END event add elements */
 

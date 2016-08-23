@@ -7,19 +7,28 @@ var gulp = require('gulp'),
 
 //less-task
 gulp.task('less', function () {
-    return gulp.src('less/*.less')
+    return gulp.src('less/styles.less')
         .pipe(less())
         .pipe(autoprefixer('last 15 versions'))
         .pipe(cache('less'))
         .pipe(gulp.dest('css'))
 });
 
-// //minify-css-task
-// gulp.task('minify-css', function() {
-//     return gulp.src('css/*.css')
-//         .pipe(cleanCSS())
-//         .pipe(gulp.dest('styles'));
-// });
+//less-task
+gulp.task('media-less', function () {
+    return gulp.src('less/media-styles.less')
+        .pipe(less())
+        .pipe(autoprefixer('last 15 versions'))
+        .pipe(cache('less'))
+        .pipe(gulp.dest('css'))
+});
+
+//minify-css-task
+gulp.task('minify-css', function() {
+    return gulp.src('css/*.css')
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('styles'));
+});
 
 //watch-task
 gulp.task('watch', function () {
@@ -40,5 +49,5 @@ gulp.task('server', function () {
 });
 
 gulp.task('default',
-    ['less', 'watch', 'server']
+    ['less', 'media-less', 'minify-css', 'watch', 'server']
 );
